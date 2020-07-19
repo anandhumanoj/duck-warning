@@ -99,9 +99,11 @@ svg.output-circle text{
 }
 
 p.tail{
-    font-family: sans-serif;
+    font-family: monospace;
     font-weight: 300;
-    font-size: 1.1em;
+    font-size: 1.5em;
+    font-variant: small-caps;
+    text-shadow: 1px 1px 0px #000;
 }
 
 a{
