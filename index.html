@@ -3,13 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-okaidia.min.css">
     <link rel="stylesheet" href="styles/style.css">
-    <title>Document</title>
+    <title>Geeeeez nerds!</title>
 </head>
 <body>
-   <h1>Number of Days to get things back to normal : </h1> 
-   <h2 id = "noOfDays"></h2>
-   <p>Now shut the duck 🦆 up and stay home 🏠!</p>
+    <header class="page-top">
+        <h4 class="top-header">Geeeeez <i>!</i>nerds! we can't <code class='inline'>modeprobe -r "the_new_normal"</code> that easily. For those who still doesn't care to understand,</code></h4>
+    </header>
+    <pre class="code-block" style="display: none;"><code class="language-js">
+        var SINGULARITY = 6.02214076 * Math.pow(10,8) * Math.floor(Math.random() * 3.14 * Math.pow(10,2)); // LOL!
+        new Date(Math.floor(Math.random() * SINGULARITY) + Date.now()); /* the answer */
+    </code></pre>
+    <main class="container">
+        <svg class="output-circle" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <circle id="circleHook" cx="100" cy="100" r="90"/>
+            <text id="textHook" x="50%" y="50%" text-anchor="middle" font-size="1.1em" font-family="monospace" fill="#ffffff">N/A</text>
+        </svg>
+        <p class="tail">Now shut the <a href="https://lists.freedesktop.org/archives/dri-devel/2018-November/198581.html" target="blank">hug</a> up and stay home 🏠!</p>
+    </main> 
 </body>
-<script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism-autoloader.min.js"></script>
+<script>
+    document.querySelector("pre.code-block").style.display = "block"; // avoid naive render before prism is loaded
+    var setDate = () => {
+        var SINGULARITY = 6.02214076 * Math.pow(10,8) * Math.floor(Math.random() * 3.14 * Math.pow(10,2)); // LOL!
+        pandemicOverOn = new Date(Math.floor(Math.random() * SINGULARITY) + Date.now()); /* the answer */
+        document.getElementById("textHook").innerHTML = pandemicOverOn.toDateString();
+    };
+
+    setDate();
+    document.getElementById("circleHook").style.animationPlayState = "running";
+    setInterval(setDate, 1400);
+</script>
 </html>
